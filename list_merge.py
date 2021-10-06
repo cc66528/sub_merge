@@ -34,13 +34,6 @@ class sub_convert():# 将订阅链接中YAML，Base64等内容转换为 Url 链�
 
     def url_encode(self):# 将订阅内容转化为 Url 链接内容
 
-        """ i = 0
-        while i < 3:
-            try:
-                resp = requests.get(self.sub_url, timeout=5)
-                sub_content = str(resp.content.decode('utf-8'))# 获取其它编码（utf-8）文本https://developer.huaweicloud.com/hero/thread-69241-1-1.html
-            except requests.exceptions.RequestException:
-                i += 1 """
         s = requests.Session()
         s.mount('http://', HTTPAdapter(max_retries=3))
         s.mount('https://', HTTPAdapter(max_retries=3))
