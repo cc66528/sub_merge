@@ -42,7 +42,7 @@ jobs:
       # env:
       #   CONFIG: ${{ secrets.CONFIG }}
       run: |
-        python sub_merge.py
+        python list_merge.py
       #   echo "$CONFIG" > ./config.json
          # 使用云开发 Github Action 部署
          
