@@ -32,9 +32,11 @@ jobs:
           ${{ runner.os }}-pip-
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: 安装依赖
+    - name: 设定依赖
       run: |
         pip freeze > requirements.txt
+    - name: 安装依赖
+      run: |
         pip install -r requirements.txt
     - name: 执行任务
       # env:
