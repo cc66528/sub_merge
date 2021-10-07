@@ -6,7 +6,7 @@ from urllib.parse import quote
 import requests
 from requests.adapters import HTTPAdapter
 
-# 分析当前项目依赖 https://cloud.tencent.com/developer/article/1604926
+# 分析当前项目依赖 https://blog.csdn.net/lovedingd/article/details/102522094
 
 
 
